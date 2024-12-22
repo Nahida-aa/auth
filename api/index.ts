@@ -3,13 +3,22 @@ import { Hono } from 'hono'
 import { handle } from 'hono/vercel'
 // import htmlApp from '@/api/html'
 // import apiApp from '@/api/api.ts'
-import apiApp from './api'
+import apiApp from './api.js'
 
 
 const app = new Hono()
 
 app.get('/api/index', (c) => {
   return c.json({ message: "API index" })
+})
+
+app.get('/api/list', (c) => {
+  return c.json(
+    [
+      { id: 1, name: "John" },
+      { id: 2, name: "Doe" }
+    ]
+  )
 })
 
 app
