@@ -1,6 +1,7 @@
 {
   "type": "module", 
   "scripts": {
+    "hono-dev": "hono --port 3000",
     "start": "vercel dev",
     "deploy": "vercel"
   },

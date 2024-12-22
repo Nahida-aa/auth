@@ -5,8 +5,15 @@ This is a [honojs/hono](https://hono.dev/) starter kit for deploying on Vercel.
 First, run the development server:
 
 ```bash
-npm install
-npm run start #vercel dev will run
+# 安装依赖
+pnpm i
+# or
+pnpm install
+
+# 启动开发环境
+pnpm dev
+# or
+pnpm run start #vercel dev will run
 ```
 
 Follow the setup guide to select a Vercel project.
